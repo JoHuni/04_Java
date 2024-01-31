@@ -180,7 +180,7 @@ public class ConditionEx {
 		int sci = sc.nextInt();
 
 		double total = 0;
-		total = (ko + eng + ma + so + sci) / 5;
+		total = (ko + eng + ma + so + sci) / 5.0;
 		
 		if (ko < 40 || eng < 40 || ma < 40 || so < 40 || sci < 40) {
 		    System.out.print("FAIL [40점 미만 과목이 존재합니다 :");
