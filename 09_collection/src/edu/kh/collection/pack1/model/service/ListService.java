@@ -122,6 +122,16 @@ public class ListService {
 	 */
 
 	public void bookManage() {
+		
+		/*
+		 * ArrayList : 배열 형태의 리스트
+		 * 장점 : 검색이 빠름
+		 * 단점 : 중간 삽입, 제거가 느림
+		 * 
+		 * LinkedList : 연결된 형태의 리스트(기차)
+		 * 장점 : 중간 삽입, 제거가 빠름
+		 * 단점 : 검색이 느림
+		 * */
 		List<Book> bookList = new ArrayList<Book>();
 		
 		Scanner sc = new Scanner(System.in);
