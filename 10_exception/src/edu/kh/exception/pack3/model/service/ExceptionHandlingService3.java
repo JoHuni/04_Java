@@ -175,8 +175,14 @@ public class ExceptionHandlingService3 {
 		// IOException을 현재 메서드를 호출한 곳으로 던져서
 		// 상황에 맞게 별도로 처리하게 함
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str = br.readLine();
-//		br.close(); // 사용 끝난 br 객체 메모리 반환(제거)
-		return str;
+		try {
+			String str = br.readLine();
+			return str;
+		}
+		finally {
+			if(br != null) {
+				br.close();
+			}
+		}
 	}
 }

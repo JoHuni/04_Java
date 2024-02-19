@@ -125,12 +125,12 @@ public class PolyService {
 		// 업캐스팅
 		SmartPhone s1 = new Galaxy("AMOLED", "KT", "스냅드래곤", 17);
 		
-		//s1.toStriong()작성시 SmartPhone의 toString() 호출된다고 표시됨 = 정적바인딩
+		// s1.toStriong()작성시 SmartPhone의 toString() 호출된다고 표시됨 = 정적바인딩
 		// (참조변수가 부모타입이니까 부모의 메서드 호출
 		// 하지만 실행을 해보니 .....
 		// SmartPhone.toString()이 아닌
 		// Galaxy.toString() 메서드가 호출됨 == 동적 바인딩
-		System.out.println(s1.toString());
+		System.out.println(((SmartPhone)s1).toString());
 	}
 	
 	public void method5() {

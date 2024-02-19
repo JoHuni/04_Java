@@ -12,7 +12,7 @@ public class PolyRun {
 ////		service.method6();
 ////		service.method7();
 ////		service.method8();
-//		service.method9();
+		service.method9();
 		
 	}
 }
